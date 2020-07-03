@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Muli", sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #2d3133;
+  font-size: 14px;
+}
+
+a:hover {
+  transition: all 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p {
+  color: #7d7987;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.navbar {
+  height: 80px;
+  background-color: #458ff6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  margin-right: 7rem;
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.active {
+  color: #ffffff;
+}
+
+.nav-item {
+  margin-left: 30px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #ffffff;
+}
+
+.navbar-brand {
+  margin-left: 7rem;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 56px;
+  color: #ffffff;
+  display: inline;
+}
+
+.top-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.top-detail {
+  width: 50%;
+  min-width: 320px;
+  margin-top: 40px;
+}
+
+.top-detail .subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.top-detail .title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 66px;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.top-detail .description {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  margin-bottom: 40px;
+}
+
+.index-button {
+  width: 184px;
+  height: 48px;
+  text-align: center;
+  line-height: 45px;
+  font-weight: 600;
+  color: #458ff6;
+  background-color: #ffffff;
+  border: 2px solid #458ff6;
+  border-radius: 40px;
+}
+
+.index-button:hover {
+  color: #ffffff;
+  background-color: #458ff6;
+}
+
+.index-button {
+  cursor: pointer;
+}
+
+.top-image {
+  width: 40%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.top-image img {
+  width: 88%;
+}
+
+.container {
+  margin: 0 7rem;
+}
+
+.container-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.konsultasi {
+  width: 30%;
+  margin: 20px auto;
+  cursor: pointer;
+  padding: 4rem;
+}
+
+.konsultasi h4 {
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+}
+
+.konsultasi p {
+  color: #7d7987;
+  font-family: "Muli", sans-serif;
+  font-size: 15px;
+}
+
+.details-info img {
+  margin: 12px auto;
+}
+
+.details-info {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+
+.container-satu {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.head {
+  text-align: center;
+  margin: 8rem 0 2rem 0;
+}
+
+.head h1 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.head p {
+  font-size: 16px;
+}
+
+/*footer*/
+.footer {
+  background-color: #458ff6;
+  color: #fff;
+  height: 350px;
+  padding: 4rem 7rem;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h1 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list h1 {
+  font-size: 18px;
+  padding-bottom: 18px;
+}
+
+.footer-list a:hover {
+  color: #fff;
+}
+
+.footer-list a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list li {
+  padding-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .konsultasi {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-list {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin: 0 20px;
+  }
+
+  .top-image {
+    display: none;
+  }
+  .navbar-nav {
+    display: none;
+  }
+
+  .head {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .head p {
+    display: none;
+  }
+
+  .top-detail p {
+    display: none;
+  }
+
+  .top-detail .index-button {
+    margin-top: 5rem;
+  }
+
+  .navbar-brand {
+    margin: 0 auto;
+  }
+
+  .footer {
+    margin: 0 auto;
+  }
+}
